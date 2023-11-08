@@ -168,6 +168,9 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 		}
+		a:focus {
+    			transform: scale(1.05); 	
+			/* Slightly increase the size */
 
 	strong, b {
 		font-weight: 400;
