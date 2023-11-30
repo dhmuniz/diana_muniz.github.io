@@ -3783,3 +3783,45 @@ input, select, textarea {
 			}
 
 		}
+/* Features */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.features li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the content to the top and the button to the bottom */
+    align-items: center; /* This will center the button horizontally */
+    padding: 1em;
+    width: calc(33.333% - 2rem); /* Adjust the width as necessary */
+    box-sizing: border-box;
+    margin: 1em; /* Provide some space around the items */
+}
+
+/* Add this to ensure the buttons align at the bottom */
+.features li.has-button {
+    height: 100%; /* This will make sure all items have the same height */
+}
+
+.features li .actions {
+    width: 100%; /* Ensure the actions take full width of the parent */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 980px) {
+    .features li {
+        width: calc(50% - 2rem); /* Adjust the width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .features li {
+        width: 100%; /* Each item takes full width on very small screens */
+    }
+}
