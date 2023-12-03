@@ -3831,3 +3831,9 @@ input, select, textarea {
         width: 100%; /* Each item takes full width on very small screens */
     }
 }
+.badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+}
