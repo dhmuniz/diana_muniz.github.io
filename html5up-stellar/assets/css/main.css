@@ -2894,7 +2894,7 @@ input, select, textarea {
 }
 
     .statistics li:hover {
-        transform: scale(1.05); /* Enlarges the link to 105% of its size */
+        transform: scale(1.1); /* Enlarges the box to 110% of its size on hover */
     }
 
     .statistics li.style1 {
@@ -2926,16 +2926,6 @@ input, select, textarea {
         letter-spacing: -0.025em;
     }
 
-    .statistics li:first-child {
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
-    }
-
-    .statistics li:last-child {
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-    }
-
     .statistics li .icon {
         display: inline-block;
     }
@@ -2963,7 +2953,25 @@ input, select, textarea {
     }
 
         .statistics li:first-child {
-            border-bottom-left-
+            border-bottom-left-radius: 0;
+            border-top-right-radius: 8px;
+        }
+
+        .statistics li:last-child {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 8px;
+        }
+
+        .statistics li .icon:before {
+            font-size: 3.75rem;
+        }
+
+        .statistics li strong, .statistics li b {
+            font-size: 2.5em;
+        }
+
+}
+
 
 
 /* Spotlight */
