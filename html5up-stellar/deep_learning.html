@@ -30,38 +30,39 @@ v<!DOCTYPE HTML>
 							<section id="content" class="main">
 								<!--<span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
 								<h2>Objective</h2>
-								<p>Develop two supervised machine learning models (logistic regression and random forest) to accurately classify emails as spam or not spam, enhancing the email filtering system of an Internet Service Provider.</p>
+								<p>Develop a neural network model to predict the likelihood of student loan repayment, aiding a company specializing in loan refinancing in determining accurate interest rates for borrowers.</p>
 								
 								<h2>Challenge</h2>
-								<p>The goal was to leverage machine learning to improve the accuracy of spam detection, thereby enhancing the user experience and security.  We were to build two models to compare which could identify spam emails with a higher accuracy metric.</p>
+								<p>The project aimed to utilize machine learning, specifically neural networks, to predict loan repayment success based on various borrower features. The challenge was to process a given dataset and utilize it for making accurate predictions that could influence financial decisions.</p>
 								
 								<h2>Innovation</h2>
-								<p>Employed Pandas for data preprocessing, segmenting the dataset into labels (y) from the 'spam' column and features (X) from the remaining columns. Utilized scikit-learn for developing, training, and testing two machine learning models: logistic regression and random forest. This approach allowed for the comparison of the effectiveness of different algorithms in spam detection.</p>
+								<p>Utilized Pandas for data analysis and preprocessing, segmenting the dataset into a target set (y) defined by the “credit_ranking” column and a features set (X) from other columns. TensorFlow was employed to design a deep neural network model, considering the dataset's features to predict credit quality.</p>
 								
 								<h2>Process</h2>
 								<p>This project involved several key steps:</p>
 								<ol>
-									<li>Data reading and preprocessing using Pandas.</li>
-									<li>Splitting data into training and testing sets with scikit-learn's train_test_split.</li>
-									<li>Feature scaling using scikit-learn's StandarScaler to normalize the feature set.</li>
-									<li>Building and fitting logistic regression and random forest models using scikit-learn.</li>
-									<li>Evaluating and comparing the accuracy of both models in classifying spam emails.</li>
+									<li>Data preparation and analysis using Pandas.</li>
+									<li>Splitting the data into training and testing sets.</li>
+									<li>Scaling feature data using scikit-learn's StandardScaler.</li>
+									<li>Developing a neural network model using TensorFlow, with specific layers and neurons based on the input features.</li>
+									<li>Compiling, fitting, and evaluating the model for loss as an accuracy metric.</li>
+									<li>Saving and exporting the model for future use and analysis.</li>
 								</ol>
 								
 								<h2>Technology Stack</h2>
 								<ul>
-									<li>Pandas: Utilized for data manipulation and preprocessing, offering robust data analysis capabilities essential for handling the dataset effectively.</li>
-									<li>scikit-learn: Employed for building, training, testing, and evaluating machine learning models, crucial for the logistic regression and random forest classifiers.</li>
-									<li>Python: The primary programming language used for scripting and developing the machine learning models.</li>
-									<li>Jupyter Notebooks: Served as the interactive development environment, facilitating code execution, visualization, and documentation in a comprehensive and user-friendly format.</li>
-									<li>Google Colab: Leveraged for its cloud-based Python programming interface, enhancing collaboration and providing powerful computational resources to run complex machine learning models efficiently.</li>
+									<li>Pandas: Used for effective data manipulation and preprocessing.</li>
+									<li>scikit-learn: Employed for scaling feature data, crucial for neural network efficiency.</li>
+									<li>TensorFlow and Keras: Utilized for creating and evaluating the neural network model.</li>
+									<li>Python: The primary language for scripting and model development.</li>
+									<li> Google Colab: Provided an interactive environment for code execution, visualization, and documentation.</li>
 								</ul>
 								
 								<h2>Outcomes</h2>
-								<p>After developing these two distinct machine learning models it was found that Random Forest Classifier outperformed Logistic Regression in accurately identifying sam emails.  This superiority in performance is due to it's ability to handle the complexities of the dataset without overfitting, a common challenge in classification tasks. </p>
+								<p>The neural network model demonstrated the ability to predict student loan repayment success, which could provide valuable insights for lenders.  This model showcases the potential of neural networks in financial risk assessment and decision-making, demonstrating the practical application of machine learning in predicting loan repayment probabilities.</p>
 
 								<h2>Notebook</h2>
-								<p>View the notebook <a href ='https://drive.google.com/file/d/1QS4k7RoushaRoep76vGw9-wRd5cqQuXj/view?usp=sharing'>here</a>.</p>
+								<p>View the notebook <a href ='https://colab.research.google.com/drive/1mlcUNNLvqZfV3FFIdJMIk1u83ABiEqUE?usp=sharing'>here</a>.</p>
 							</section>
 
 					</div>
