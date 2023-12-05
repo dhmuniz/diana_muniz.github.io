@@ -1,0 +1,111 @@
+v<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Deep Learning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> 
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper
+			<div id="wrapper"> -->
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Predicting Student Loan Repayment</h1>
+						<h2>with Deep Learning</h2>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<!--<span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<h2>Objective</h2>
+								<p>Develop two supervised machine learning models (logistic regression and random forest) to accurately classify emails as spam or not spam, enhancing the email filtering system of an Internet Service Provider.</p>
+								
+								<h2>Challenge</h2>
+								<p>The goal was to leverage machine learning to improve the accuracy of spam detection, thereby enhancing the user experience and security.  We were to build two models to compare which could identify spam emails with a higher accuracy metric.</p>
+								
+								<h2>Innovation</h2>
+								<p>Employed Pandas for data preprocessing, segmenting the dataset into labels (y) from the 'spam' column and features (X) from the remaining columns. Utilized scikit-learn for developing, training, and testing two machine learning models: logistic regression and random forest. This approach allowed for the comparison of the effectiveness of different algorithms in spam detection.</p>
+								
+								<h2>Process</h2>
+								<p>This project involved several key steps:</p>
+								<ol>
+									<li>Data reading and preprocessing using Pandas.</li>
+									<li>Splitting data into training and testing sets with scikit-learn's train_test_split.</li>
+									<li>Feature scaling using scikit-learn's StandarScaler to normalize the feature set.</li>
+									<li>Building and fitting logistic regression and random forest models using scikit-learn.</li>
+									<li>Evaluating and comparing the accuracy of both models in classifying spam emails.</li>
+								</ol>
+								
+								<h2>Technology Stack</h2>
+								<ul>
+									<li>Pandas: Utilized for data manipulation and preprocessing, offering robust data analysis capabilities essential for handling the dataset effectively.</li>
+									<li>scikit-learn: Employed for building, training, testing, and evaluating machine learning models, crucial for the logistic regression and random forest classifiers.</li>
+									<li>Python: The primary programming language used for scripting and developing the machine learning models.</li>
+									<li>Jupyter Notebooks: Served as the interactive development environment, facilitating code execution, visualization, and documentation in a comprehensive and user-friendly format.</li>
+									<li>Google Colab: Leveraged for its cloud-based Python programming interface, enhancing collaboration and providing powerful computational resources to run complex machine learning models efficiently.</li>
+								</ul>
+								
+								<h2>Outcomes</h2>
+								<p>After developing these two distinct machine learning models it was found that Random Forest Classifier outperformed Logistic Regression in accurately identifying sam emails.  This superiority in performance is due to it's ability to handle the complexities of the dataset without overfitting, a common challenge in classification tasks. </p>
+
+								<h2>Notebook</h2>
+								<p>View the notebook <a href ='https://drive.google.com/file/d/1QS4k7RoushaRoep76vGw9-wRd5cqQuXj/view?usp=sharing'>here</a>.</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
