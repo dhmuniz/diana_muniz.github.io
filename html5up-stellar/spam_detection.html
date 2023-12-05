@@ -30,23 +30,31 @@
 							<section id="content" class="main">
 								<!--<span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
 								<h2>Objective</h2>
-								<p>Implement a streamlined process for managing expired leads, reducing manual effort and improving efficiency in lead tracking and agent performance metrics.</p>
+								<p>Develop two supervised machine learning models (logistic regression and random forest) to accurately classify emails as spam or not spam, enhancing the email filtering system of an Internet Service Provider.</p>
 								
 								<h2>Challenge</h2>
-								<p>The existing process for managing expired insurance enrollment leads was labor-intensive, leading to mismanagement and inefficiencies. Managers had to manually identify responsible agents for expired leads and communicate across teams, which was not only time-consuming but also resulted in missed opportunities for timely follow-ups and accurate data tracking.</p>
+								<p>The goal was to leverage machine learning to improve the accuracy of spam detection, thereby enhancing the user experience and security.  We were to build two models to compare which could identify spam emails with a higher accuracy metric.</p>
 								
 								<h2>Innovation</h2>
-								<p>Developed an intuitive automation system leveraging Google Forms, Google Sheets, and Google Apps Script to optimize the expired lead management process. This solution minimized data entry requirements and automated the communication loop between managers and agents.</p>
+								<p>Employed Pandas for data preprocessing, segmenting the dataset into labels (y) from the 'spam' column and features (X) from the remaining columns. Utilized scikit-learn for developing, training, and testing two machine learning models: logistic regression and random forest. This approach allowed for the comparison of the effectiveness of different algorithms in spam detection.</p>
 								
 								<h2>Process</h2>
-								<p>Upon form submission by a manager which required minimal information, the system utilized a Google Sheet to pull in the information needed to notify the appropriate manager. A Google Apps Script, Triggered by the form submission, formatted the email content, embedded with the specific lead ID, and linked a procedural guide, then automatically dispatched an email to the agent with the relevant information and action steps, and CC'd the manager for visibility.</p>
+								<p>This project involved several key steps:</p>
+								<ol>
+									<li>Data reading and preprocessing using Pandas.</li>
+									<li>Splitting data into training and testing sets with scikit-learn's train_test_split.</li>
+									<li>Feature scaling using scikit-learn's StandarScaler to normalize the feature set.</li>
+									<li>Building and fitting logistic regression and random forest models using scikit-learn.</li>
+									<li>Evaluating and comparing the accuracy of both models in classifying spam emails.</li>
+								</ol>
 								
 								<h2>Technology Stack</h2>
 								<ul>
-									<li>Google Forms for user input</li>
-									<li>Google Sheets for data management and look up funcions</li>
-									<li>Google Apps Script for automation and email triggers</li>
-									<li>JavaScript (underlying language of Google Apps Script)</li>
+									<li>Pandas: Utilized for data manipulation and preprocessing, offering robust data analysis capabilities essential for handling the dataset effectively.</li>
+									<li>scikit-learn: Employed for building, training, testing, and evaluating machine learning models, crucial for the logistic regression and random forest classifiers.</li>
+									<li>Python: The primary programming language used for scripting and developing the machine learning models.</li>
+									<li>Jupyter Notebooks: Served as the interactive development environment, facilitating code execution, visualization, and documentation in a comprehensive and user-friendly format.</li>
+									<li>Google Colab: Leveraged for its cloud-based Python programming interface, enhancing collaboration and providing powerful computational resources to run complex machine learning models efficiently.</li>
 								</ul>
 								
 								<h2>Outcomes</h2>
