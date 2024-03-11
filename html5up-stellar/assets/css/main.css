@@ -2921,6 +2921,10 @@ input, select, textarea {
         background-color: #8cc9f0;
     }
 
+ .statistics li.style1 {
+        background-color: #efa8b0;
+    }
+
     .statistics li strong, .statistics li b {
         display: block;
         font-size: 2em;
