@@ -44,7 +44,7 @@
 								<p>The primary challenge was to accurately forecast future sales by understanding and modeling the historical sales data's patterns, trends, and seasonality. The task involved preprocessing the data, checking for stationarity, and selecting appropriate forecasting models that could handle the seasonal fluctuations observed in the sales data, while not being impeded by the limited historical data.</p>
 								
 								<h2>Innovation</h2>
-								<p>This project utilized ARIMA modeling, and then double-checked the accuracy of the forecast using the Seasonal Naive forecasting approach.  The Seasonal Naive method leveraged historical seasonal patterns to predict future sales. This dual approach allowed for a comprehensive analysis of the data and yielded more robust forecasts.</p>
+								<p>This project utilized ARIMA modeling, and then followed up with the Seasonal Naive forecasting approach, due to the difficulty ARIMA was having capturing the seasonality of the data.  The Seasonal Naive method leveraged historical seasonal patterns to predict future sales. This approach highlights the importance of flexibility when choosing the right model for your data to produce the most robust forecasts.</p>
 								
 								<h2>Process</h2>
 								<p>The project followed a structured process, including:</p>
@@ -52,7 +52,7 @@
 									<li>Data cleaning and preprocessing to prepare the monthly sales data for analysis.</li>
 									<li>Conducting stationarity tests to ensure the data's suitability for time series forecasting.</li>
 									<li>Utilizing pmdarima's auto_arima function to find the optimal parameters for the ARIMA model, then running ARIMA.</li>
-									<li>Implementing a Seasonal Naive forecasting method to exploit the data's seasonal patterns.</li>
+									<li>Pivoting to a Seasonal Naive forecasting method to exploit the data's seasonal patterns.</li>
 									<li>Comparing the forecasts against actual sales data from Q1 2020 to evaluate the models' accuracy.</li>
 									<li>Visualizing the forecasts and their confidence intervals to present the findings clearly.</li>
 								</ul>
